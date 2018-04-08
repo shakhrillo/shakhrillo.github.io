@@ -13,12 +13,10 @@
             <div 
             class="col-lg-3 py-3"
             id="leftSide"
-            style="
-             border-right:1px solid #eee;
-             height:100%;
-            "
             >
-                <img class="mb-2 w-50 rounded" src="https://avatars1.githubusercontent.com/u/3455633?s=460&v=4" alt="Shakhrillo Tukhsanov">
+                <img 
+                class="mb-2 w-25 rounded-circle" 
+                src="./me.jpg" alt="Shakhrillo Tukhsanov">
                 <h3>Shakhrillo <br>
                 <small>@mr.jhon1327 <span style="font-size:12px;bottom:10px;position:relative;border-bottom:1px solid #eee;">skype</span></small>
                 </h3>
@@ -29,7 +27,7 @@
                 <button class="btn btn-success w-100">Contact</button>
             </div>
             <div class="col-lg-9 py-3">
-                <h3>Experiences & Works</h3>
+                <h3>Published works</h3>
                 <div class="row">
                     <div class="col-lg-6">
                         <div 
@@ -51,6 +49,12 @@
     </div>
     <script>
     var leftSide = document.getElementById('leftSide');
+    // leftSide.style.backgroundImage = `url(./bg.jpg)`;
+    leftSide.style.backgroundSize = 'cover';
+    leftSide.style.backgroundPosition = 'center';
+    // leftSide.style.color = '#fff';
+    // leftSide.style.backgroundColor = '#212121';
+    leftSide.style.boxShadow = '0 3px 32px #eee';
     leftSide.style.height = window.innerHeight + 'px';
     </script>
 </body>
