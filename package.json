@@ -2,10 +2,12 @@
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://shakhrillo.github.io/shakhrillo.github.io",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "deploy": "gh-pages -d out",
+    "publish": "touch dist/.nojekyll && npm run deploy",
     "start": "next start",
     "lint": "next lint"
   },

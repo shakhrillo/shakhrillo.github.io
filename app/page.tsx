@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { ArrowRight, Github, Linkedin, Mail, MapPin } from "lucide-react"
+import { ArrowRight, FileUserIcon, Github, Globe, Linkedin, Mail, MapPin, UserIcon } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { ProjectCard } from "@/components/project-card"
@@ -12,8 +12,10 @@ export default function Home() {
       <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
         <div className="container flex h-16 items-center justify-between">
           <div className="flex items-center gap-2">
-            <MapPin className="h-6 w-6 text-emerald-600" />
-            <span className="text-xl font-bold">GIS Portfolio</span>
+            <FileUserIcon className="h-6 w-6 text-emerald-600" />
+            <span className="text-xl font-bold">
+              Shakhrillo
+            </span>
           </div>
           <nav className="hidden md:flex gap-6">
             <Link href="#about" className="text-sm font-medium hover:text-emerald-600 transition-colors">
@@ -30,16 +32,21 @@ export default function Home() {
             </Link>
           </nav>
           <div className="flex items-center gap-4">
-            <Link href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+            <Link href="https://github.com/shakhrillo" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon">
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Button>
             </Link>
-            <Link href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.linkedin.com/in/shaxrillo" target="_blank" rel="noopener noreferrer">
               <Button variant="ghost" size="icon">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
+              </Button>
+            </Link>
+            <Link href="https://www.upwork.com/freelancers/~019b23c858765bbfb5" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost">
+                <span>Upwork</span>
               </Button>
             </Link>
           </div>
@@ -51,7 +58,9 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/40 flex items-center">
             <div className="container">
               <div className="max-w-xl text-white">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4">GIS Specialist & Developer</h1>
+                <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                  GIS Specialist & Full-Stack Developer
+                </h1>
                 <p className="text-lg md:text-xl mb-6">
                   Transforming geospatial data into meaningful insights and interactive experiences
                 </p>
@@ -59,7 +68,7 @@ export default function Home() {
                   <Button asChild className="bg-emerald-600 hover:bg-emerald-700">
                     <Link href="#projects">View Projects</Link>
                   </Button>
-                  <Button asChild variant="outline" className="text-white border-white hover:bg-white/10">
+                  <Button asChild variant="outline" className="text-black border-white hover:bg-white/80">
                     <Link href="#contact">Contact Me</Link>
                   </Button>
                 </div>
@@ -74,15 +83,15 @@ export default function Home() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <img
-                  src="/placeholder.svg?height=400&width=400"
-                  alt="Profile"
+                  src="/shakhrillo.png"
+                  alt="Shakhrillo"
                   className="rounded-lg shadow-lg w-full max-w-md mx-auto"
                 />
               </div>
               <div>
                 <p className="text-lg mb-4">
                   I'm a passionate GIS specialist with expertise in Esri technologies and geospatial development. With a
-                  background in [your background], I specialize in creating interactive maps, spatial analysis, and
+                  background in geographic information systems, I specialize in creating interactive maps, spatial analysis, and
                   developing custom GIS solutions.
                 </p>
                 <p className="text-lg mb-6">
@@ -104,14 +113,14 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-8">Featured Projects</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <ProjectCard
-                title="Urban Growth Analysis"
-                description="Analyzed 10-year urban expansion patterns using Esri ArcGIS Pro and remote sensing data."
-                image="/placeholder.svg?height=300&width=400"
-                tags={["ArcGIS Pro", "Remote Sensing", "Spatial Analysis"]}
-                githubUrl="https://github.com/yourusername/urban-growth"
-                demoUrl="https://example.com/demo"
+                title="Esri Experience Builder Custom Widget"
+                description="Developed a custom widget for Esri Experience Builder to enhance user interaction and data visualization."
+                image="https://developers.arcgis.com/experience-builder/storybook/logo.png"
+                tags={["Esri Experience Builder", "JavaScript", "Web Development"]}
+                githubUrl="https://github.com/shakhrillo/kdrm-widgets"
+                demoUrl="https://www.loom.com/share/1088857dccdc487da01ff6fe0fc6e93f?sid=a58182cc-7bec-466e-a4d8-5b0deba69286"
               />
-              <ProjectCard
+              {/* <ProjectCard
                 title="Interactive Flood Risk Map"
                 description="Developed a web-based interactive flood risk assessment tool using ArcGIS JavaScript API."
                 image="/placeholder.svg?height=300&width=400"
@@ -150,7 +159,7 @@ export default function Home() {
                 tags={["ArcGIS Enterprise", "API Development", "Geocoding"]}
                 githubUrl="https://github.com/yourusername/geocoding-api"
                 demoUrl="https://example.com/demo"
-              />
+              /> */}
             </div>
           </div>
         </section>
@@ -217,35 +226,35 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="flex items-center gap-3">
                     <Mail className="h-5 w-5 text-emerald-600" />
-                    <a href="mailto:your.email@example.com" className="hover:text-emerald-600 transition-colors">
-                      your.email@example.com
+                    <a href="mailto:mr.jhon1327@gmail.com" className="hover:text-emerald-600 transition-colors">
+                      mr.jhon1327@gmail.com
                     </a>
                   </div>
                   <div className="flex items-center gap-3">
                     <Linkedin className="h-5 w-5 text-emerald-600" />
                     <a
-                      href="https://linkedin.com/in/yourusername"
+                      href="https://linkedin.com/in/shaxrillo"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-emerald-600 transition-colors"
                     >
-                      linkedin.com/in/yourusername
+                      linkedin.com/in/shaxrillo
                     </a>
                   </div>
                   <div className="flex items-center gap-3">
                     <Github className="h-5 w-5 text-emerald-600" />
                     <a
-                      href="https://github.com/yourusername"
+                      href="https://github.com/shakhrillo"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="hover:text-emerald-600 transition-colors"
                     >
-                      github.com/yourusername
+                      github.com/shakhrillo
                     </a>
                   </div>
                 </div>
               </div>
-              <form className="space-y-4 bg-white p-6 rounded-lg shadow-md">
+              {/* <form className="space-y-4 bg-white p-6 rounded-lg shadow-md">
                 <div className="grid gap-2">
                   <label htmlFor="name" className="text-sm font-medium">
                     Name
@@ -280,7 +289,7 @@ export default function Home() {
                   ></textarea>
                 </div>
                 <Button className="w-full bg-emerald-600 hover:bg-emerald-700">Send Message</Button>
-              </form>
+              </form> */}
             </div>
           </div>
         </section>
@@ -289,10 +298,12 @@ export default function Home() {
         <div className="container">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex items-center gap-2 mb-4 md:mb-0">
-              <MapPin className="h-6 w-6 text-emerald-400" />
-              <span className="text-xl font-bold">GIS Portfolio</span>
+              <UserIcon className="h-6 w-6 text-emerald-400" />
+              <span className="text-xl font-bold">
+                Shakhrillo
+              </span>
             </div>
-            <div className="text-slate-300 text-sm">© {new Date().getFullYear()} Your Name. All rights reserved.</div>
+            <div className="text-slate-300 text-sm">© {new Date().getFullYear()} Shakhrillo. All rights reserved.</div>
           </div>
         </div>
       </footer>
