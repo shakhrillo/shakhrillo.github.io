@@ -99,7 +99,7 @@ export default function Home() {
                   data-driven decisions through effective visualization and analysis.
                 </p>
                 <Button asChild className="bg-emerald-600 hover:bg-emerald-700">
-                  <Link href="/resume.pdf" target="_blank">
+                  <Link href="/SHAKHRILLO.pdf" target="_blank">
                     Download Resume <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
@@ -113,12 +113,28 @@ export default function Home() {
             <h2 className="text-3xl font-bold mb-8">Featured Projects</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               <ProjectCard
-                title="Esri Experience Builder Custom Widget"
-                description="Developed a custom widget for Esri Experience Builder to enhance user interaction and data visualization."
+                title="ArcGIS Experience Builder Custom Widget"
+                description="Developed a custom widget for ArcGIS Experience Builder to enhance user interaction and data visualization."
                 image="https://developers.arcgis.com/experience-builder/storybook/logo.png"
-                tags={["Esri Experience Builder", "JavaScript", "Web Development"]}
+                tags={["ArcGIS Experience Builder", "JavaScript", "Web Development"]}
                 githubUrl="https://github.com/shakhrillo/kdrm-widgets"
-                demoUrl="https://www.loom.com/share/1088857dccdc487da01ff6fe0fc6e93f?sid=a58182cc-7bec-466e-a4d8-5b0deba69286"
+                demoUrl="https://www.loom.com/share/0781b579487f4c8b89ff2311d20214f7?sid=1f168a6f-9a99-427a-a52c-28479f65e6c9"
+              />
+              <ProjectCard
+                title="ArcGIS Web AppBuilder Custom Widget"
+                description="This widget allows you to zoom to a specific coordinate in the map where users need to quickly navigate to a specific location on the map."
+                image="https://www.esrij.com/cgi-bin/wp/wp-content/uploads/2023/02/WebAppBuilder_main3.png"
+                tags={["ArcGIS Web AppBuilder", "JavaScript", "Web Development"]}
+                githubUrl="https://github.com/shakhrillo/zoom_arcgis_web_app_builder"
+                demoUrl="https://www.loom.com/share/b4b6ff65aefa461985d261ad5e32fdff?sid=44607e3f-b22d-4063-b334-4da1d4e6b070"
+              />
+              <ProjectCard
+                title="Google Maps Review Scraper – Automated Data Extraction with Selenium"
+                description="Google Maps Review Scraper is a powerful and automated tool designed to extract customer reviews from Google Maps effortlessly."
+                image="https://public-files.gumroad.com/xx87h4awm0e5ydy4rqk7yrf6uni6"
+                tags={["Python", "Selenium", "Web Scraping"]}
+                githubUrl="https://shakhrillo.gumroad.com/l/yxcwrz"
+                demoUrl="https://shakhrillo.gumroad.com/l/yxcwrz"
               />
               {/* <ProjectCard
                 title="Interactive Flood Risk Map"
@@ -177,8 +193,8 @@ export default function Home() {
                   <SkillBadge name="ArcGIS JavaScript API" />
                   <SkillBadge name="ArcPy" />
                   <SkillBadge name="ArcGIS Dashboards" />
-                  <SkillBadge name="ArcGIS Survey123" />
-                  <SkillBadge name="ArcGIS StoryMaps" />
+                  {/* <SkillBadge name="ArcGIS Survey123" />
+                  <SkillBadge name="ArcGIS StoryMaps" /> */}
                   <SkillBadge name="QGIS" />
                 </div>
               </div>
@@ -188,26 +204,27 @@ export default function Home() {
                   <SkillBadge name="Python" />
                   <SkillBadge name="JavaScript" />
                   <SkillBadge name="HTML/CSS" />
+                  <SkillBadge name="Angular" />
                   <SkillBadge name="React" />
                   <SkillBadge name="SQL" />
-                  <SkillBadge name="R" />
                   <SkillBadge name="Git" />
                   <SkillBadge name="REST APIs" />
                   <SkillBadge name="Node.js" />
                 </div>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold mb-4 text-emerald-700">Analysis & Techniques</h3>
+                <h3 className="text-xl font-bold mb-4 text-emerald-700">
+                  Data Analysis & Visualization
+                </h3>
                 <div className="flex flex-wrap gap-2">
+                  <SkillBadge name="Data Analysis" />
                   <SkillBadge name="Spatial Analysis" />
-                  <SkillBadge name="Remote Sensing" />
-                  <SkillBadge name="Geostatistics" />
-                  <SkillBadge name="Network Analysis" />
-                  <SkillBadge name="Geocoding" />
-                  <SkillBadge name="Cartography" />
-                  <SkillBadge name="3D Modeling" />
-                  <SkillBadge name="Geodatabase Design" />
                   <SkillBadge name="Data Visualization" />
+                  <SkillBadge name="Machine Learning" />
+                  <SkillBadge name="Remote Sensing" />
+                  <SkillBadge name="Web Scraping" />
+                  <SkillBadge name="Data Cleaning" />
+                  <SkillBadge name="Data Mining" />
                 </div>
               </div>
             </div>
