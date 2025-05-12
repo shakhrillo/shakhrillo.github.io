@@ -112,6 +112,10 @@ export default function Home() {
           <div className="container">
             <h2 className="text-3xl font-bold mb-8">Featured Projects</h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {/* 🔹ArcGIS Experience Builder
+              🔹ArcGIS Instant Apps
+              🔹ArcGIS Dashboards
+              🔹ArcGIS StoryMaps */}
               <ProjectCard
                 title="ArcGIS Experience Builder Custom Widget"
                 description="Developed a custom widget for ArcGIS Experience Builder to enhance user interaction and data visualization."
